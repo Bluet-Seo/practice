@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력값 출력</title>
+</head>
+<body>
+    
+    <input type="text" id="userInput" placeholder="여기에 입력해주세요"/>
+    <button id="submitBtn">확인</button>
+    <p id="resultText">결과는 여기에</p>
+
+    <script>
+        const input = document.getElementById("userInput");
+        const button = document.getElementById("submitBtn");
+        const result = document.getElementById("resultText");
+
+        button.addEventListener("click", function(){
+            const userText = input.value;
+            result.textContent = userText;
+        })
+    </script>
+</body>
+
+</html>
