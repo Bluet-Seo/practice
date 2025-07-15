@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 더하기</title>
+</head>
+<body>
+
+    <input type="number" id="numberOne" placeholder="숫자를 입력해주세요" />
+    <input type="number" id="numberTwo" placeholder="숫자를 입력해주세요" />
+    <button id="addBtn">출력</button>
+    <p id="result">?????</p>
+
+    <script>
+
+        const inputOne = document.querySelector("#numberOne");
+        const inputTwo = document.querySelector("#numberTwo");
+        const button = document.querySelector("#addBtn");
+        const text = document.querySelector("#result")
+
+        button.addEventListener("click", function(){
+            const num1 = Number(inputOne.value);
+            const num2 = Number(inputTwo.value);
+            const sum = num1 + num2;
+            text.textContent = sum;
+        })
+
+    </script>
+</body>
+</html>
