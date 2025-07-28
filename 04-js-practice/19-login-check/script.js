@@ -8,8 +8,20 @@ loginBtn.addEventListener("click", function () {
   const pw = pwInput.value.trim();
 
   if(id===""&&pw===""){
-    alert("입력해주세요")
+    alert("아이디와 비밀번호를 입력해주세요");
+    return;
   }
+  if(id===""||pw===""){
+    alert("모두 입력해주세요.");
+    return;
+  }
+
+  const isOnlyNumber = !isNaN(pw);
+
+  if(pw.length<6 || isOnlyNumber){
+    alert("비밀번호는 6자이상, 문자포함해서 입력해주세요");
+  }
+  
  
 });
  // 1. 입력값이 모두 비어있는지 확인
