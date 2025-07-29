@@ -20,12 +20,15 @@ loginBtn.addEventListener("click", function () {
 
   if(pw.length<6 || isOnlyNumber){
     alert("비밀번호는 6자이상, 문자포함해서 입력해주세요");
+
+    return;
   }
   
+  if(id==="mingyeong" && pw==="abc1234"){
+    loginResult.textContent="로그인 했습니다."
+  }else{
+    loginResult.textContent="로그인 실패했습니다."
+  }
  
 });
- // 1. 입력값이 모두 비어있는지 확인
-  // 2. 하나라도 비어있는지 확인
-  // 3. 비밀번호가 너무 짧거나 숫자만인지 확인
-  // 4. 아이디/비밀번호 일치 확인
-  // 5. 그 외엔 모두 실패 처리
+
