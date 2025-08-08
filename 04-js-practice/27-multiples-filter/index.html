@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배수 출력</title>
+</head>
+<body>
+    <label for="listInput" type="text">숫자 리스트 입력</label>
+    <input id="listInput" inputmode="numeric" placeholder="3,5,10,12"/>
+
+    <label for="baseInput">배수 기준</label>
+    <input id = "baseInput" type="number" placeholder="예 : 3"/>
+   
+    <button id = "runBtn">실행</button>
+
+    <div id="result"></div>
+
+    <script>
+
+        const listInput = document.querySelector("#listInput");
+        const baseInput = document.querySelector("#baseInput");
+        const runBtn = document.querySelector("#runBtn");
+        const result = document.querySelector("#result");
+
+        runBtn.addEventListener("click", function(){
+            console.log("clicked")
+        })
+
+    </script>
+</body>
+</html>
