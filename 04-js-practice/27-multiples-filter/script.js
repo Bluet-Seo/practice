@@ -16,15 +16,16 @@ runBtn.addEventListener("click", function () {
     }
 }
 
- // 2단계: 기준 숫자(base) 꺼내기
+ // 기준 숫자(base) 꺼내기
 const base = Number(baseInput.value.trim());
 
- // 3단계: 기준 숫자 검증
+ // 기준 숫자 검증
 if (!Number.isFinite(base) || base === 0) {
     console.log("유효한 기준 숫자를 입력하세요");
     return;
   }
 
+  
 const multiples = [];
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] % base === 0) {
