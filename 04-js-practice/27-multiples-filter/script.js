@@ -25,13 +25,13 @@ if (!Number.isFinite(base) || base === 0) {
     return;
   }
 
-  
 const multiples = [];
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % base === 0) {
+for(let i=0; i<numbers.length; i++){
+  if(numbers[i]%base===0){
     multiples.push(numbers[i]);
   }
 }
+
  console.log(multiples);
  result.textContent = multiples.length ? multiples.join(', ') : '해당 배수가 없습니다';
 });
