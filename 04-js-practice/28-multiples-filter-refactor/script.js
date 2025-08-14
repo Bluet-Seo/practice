@@ -17,9 +17,21 @@ runBtn.addEventListener("click", function() {
     }
   }
 
-  const base =Number(baseInput.value.trim());
-  if(!Number.isFinite(base)||base===0){
+  const base =Number(baseInput.value.trim());// 기준 숫자 꺼내기
+  if(!Number.isFinite(base)||base===0){ //기준숫자 검증
     console.log("유효한 숫자를 입력해주세요.");
     return;
   }
+
+  const multiples = numbers.filter(function(num){
+    return num% base===0;
+  });
+
+  console.log(multiples);
+  // 4) 결과 표시 (if문)
+if (multiples.length > 0) {
+  result.textContent = "배수 목록: " + multiples.join(", ");
+} else {
+  result.textContent = "해당하는 배수가 없습니다.";
+}
 });
