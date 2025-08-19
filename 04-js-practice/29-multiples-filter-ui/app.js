@@ -1,5 +1,3 @@
-console.log("안녕하세요?")
-
 const listInput = document.querySelector("#listInput");
 const baseInput = document.querySelector("#baseInput");
 const runBtn = document.querySelector("#runBtn");
@@ -10,6 +8,13 @@ runBtn.addEventListener("click", function(){
     const lists = listInput.value.split(",");// 문자열을 배열
     const numbers = [];
 
+    const base = Number(baseInput.value.trim())
+        if(!Number.isFinite(base) || base===0){
+            console.log("invalid base branch"); // 여긴 반드시 보이게!
+            result.textContent="기준 숫자를 올바르게 써주세요."
+            return; // 여기서 끝내기
+        }
+
     for(let i = 0; i<lists.length; i++){
         const value = lists[i].trim();
         if (value === "") continue; // 공백만 있으면 스킵
@@ -18,13 +23,6 @@ runBtn.addEventListener("click", function(){
         if(Number.isFinite(num)){
             numbers.push(num);
         }
-
-        result.textContent = ""
-        const base = Number(baseInput.value.trim())
-        if(!Number.isFinite(base)||base===0){
-            console.log("유효한 숫자를 입력하세요");
-            return; // 여기서 끝내기
-        }
-
+        
     }
 })
