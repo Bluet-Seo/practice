@@ -23,6 +23,16 @@ runBtn.addEventListener("click", function(){
         if(Number.isFinite(num)){
             numbers.push(num);
         }
-        
+        console.log(num)
     }
-})
+const filtered = numbers.filter(function(v) {
+    return v % base ===0;
+});
+
+if (filtered.length === 0) {
+    result.textContent = "배수인 값이 없습니다.";
+    return;
+}else{
+    result.textContent = "배수인 값 : "+filtered.join(", ");
+}
+});
