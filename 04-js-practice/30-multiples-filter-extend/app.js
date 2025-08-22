@@ -4,5 +4,8 @@ const checkBtn = document.querySelector("#checkBtn");
 const result = document.querySelector("#result");
 
 checkBtn.addEventListener("click", function(){
-    console.log("안녕하세요? ")
+    const baseInput = Number(base.value.trim());
+    if(!Number.isFinite(baseInput) || baseInput===0){
+        result.textContent="올바른 숫자를 입력해주세요"
+    }
 })
