@@ -4,8 +4,15 @@ const checkBtn = document.querySelector("#checkBtn");
 const result = document.querySelector("#result");
 
 checkBtn.addEventListener("click", function(){
+    result.textContent=""//결과 초기화
     const baseInput = Number(base.value.trim());
     if(!Number.isFinite(baseInput) || baseInput===0){
         result.textContent="올바른 숫자를 입력해주세요"
+        return;
+    }
+    const limitInput = Number(limit.value.trim());
+     if(!Number.isFinite(limitInput) || limitInput===0){
+        result.textContent="올바른 숫자를 입력해주세요"
+        return;
     }
 })
