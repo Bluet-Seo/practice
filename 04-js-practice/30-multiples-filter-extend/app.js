@@ -15,4 +15,15 @@ checkBtn.addEventListener("click", function(){
         result.textContent="올바른 숫자를 입력해주세요"
         return;
     }
-})
+    const multiples =[];
+    for(let i = 0; i<limitInput.length; i++){
+        if(i % baseInput ===0){multiples.push(i)};
+        };
+        if (multiples.length === 0) {
+        result.textContent = "배수 없음";
+        return;
+  }
+
+  result.textContent = multiples.join(", ");
+});
+
