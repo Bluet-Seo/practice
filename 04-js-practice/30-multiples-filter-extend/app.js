@@ -16,13 +16,17 @@ checkBtn.addEventListener("click", function(){
         return;
     }
     const multiples =[];
-    for(let i = 0; i<limitInput.length; i++){
+    for(let i = 1; i<limitInput; i++){
         if(i % baseInput ===0){multiples.push(i)};
         };
         if (multiples.length === 0) {
         result.textContent = "배수 없음";
         return;
   }
+  // 항상 오름차순 정렬
+multiples.sort(function(a, b){
+  return a - b;
+});
 
   result.textContent = multiples.join(", ");
 });
