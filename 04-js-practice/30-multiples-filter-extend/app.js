@@ -16,7 +16,7 @@ checkBtn.addEventListener("click", function(){
         return;
     }
     const multiples =[];
-    for(let i = 1; i<limitInput; i++){
+    for(let i = 1; i<= limitInput; i++){
         if(i % baseInput ===0){multiples.push(i)};
         };
         if (multiples.length === 0) {
