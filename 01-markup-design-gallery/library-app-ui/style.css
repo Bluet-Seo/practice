@@ -9,9 +9,35 @@
     display: flex;/*부모flex*/
     justify-content: space-between;/*자식 가로정렬방식*/
     align-items:center;/*자식 세로정렬방식*/
+    padding-bottom: 8px;
+}
+.searchbar__box{
+    width:95%;
+    height: 45px;
+    padding: 0px 16px;
+    margin: 0px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+    border-radius: 999px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: -20px;     /* 위로 올리기 */
+    background-color: white; /* 흰 배경(안 그러면 밑에 겹쳐 보임) */
+    position: relative;    /* 위치 기준만 준다 */
+    z-index: 1;            /* 앞으로 꺼내기 */
+    }
+input {
+  border: none;
+  width: 90%;
+  height: 40px;
+  border-radius: 999px;
+  padding: 0px 15px;
 }
 
-
+input:focus {
+  outline: none;  /* 클릭 시 기본 외곽선 제거 */
+}
 
 /*메뉴 */
 /* .topbar__left {};
