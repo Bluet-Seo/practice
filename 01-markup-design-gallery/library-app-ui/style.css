@@ -19,9 +19,8 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    
     border-radius: 999px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);/*그림자*/
     margin-top: -20px;     /* 위로 올리기 */
     background-color: white; /* 흰 배경(안 그러면 밑에 겹쳐 보임) */
     position: relative;    /* 위치 기준만 준다 */
