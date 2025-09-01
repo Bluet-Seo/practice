@@ -38,9 +38,29 @@ input:focus {
   outline: none;  /* 클릭 시 기본 외곽선 제거 */
 }
 
-/*메뉴 */
-/* .topbar__left {};
+.mainbar{
+  width: 375px;
+  height: 500px;
+}
 
-.topbar__title (앱 제목 텍스트)
+.book-card{
+  display: flex;
+}
 
-.topbar__right (장바구니/알림 아이콘 영역) */
+h2{
+  padding: 0px 15px;
+  font-size: 25px;
+}
+
+.book-card__thumb {
+  width: 140px;
+  height: 190px;
+  padding: 0 15px;       
+}
+
+.book-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 비율 유지하며 꽉 채움 */
+  display: block;         /* 밑에 빈틈 방지 */
+}
