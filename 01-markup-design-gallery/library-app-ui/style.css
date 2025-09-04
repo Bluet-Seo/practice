@@ -38,9 +38,10 @@ input:focus {
   outline: none;  /* 클릭 시 기본 외곽선 제거 */
 }
 
+/*본메인*/
 .mainbar{
   width: 375px;
-  height: 500px;
+  height: 250px;
   padding: 0px 15px;
 }
 
@@ -130,3 +131,9 @@ button {
   outline: none; /* 클릭했을 때 파란 테두리 제거 */
 }
 
+/*서브메인*/
+.mainbar--second{
+  width: 375px;
+  height: 250px;
+  padding: 0px 15px;
+}
