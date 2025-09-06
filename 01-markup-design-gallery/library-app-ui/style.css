@@ -170,3 +170,10 @@ button {
 }
 .book-card__icon i:last-child {
   color: lightgray; /* 마지막꺼만 그레이 */
+}
+
+.footer{
+  width: 375px;
+  height: 230px;
+  padding: 0px 15px;
+}
