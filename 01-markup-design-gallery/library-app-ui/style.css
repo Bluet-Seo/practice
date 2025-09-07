@@ -177,3 +177,32 @@ button {
   height: 230px;
   padding: 0px 15px;
 }
+.writer-card{
+  display: flex;
+}
+.writer-card__thumb{
+  width: 150px;
+  height: 170px; 
+  margin-right: 20px;
+}
+
+.writer-card__thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 비율 유지하며 꽉 채움 */
+  display: block;         /* 밑에 빈틈 방지 */
+  border-radius: 10px;
+}
+
+.writer-card__sub{
+   width: 230px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+}
+
+p{
+  color: lightgray;
+  font-size: 15px;
+}
