@@ -3,5 +3,8 @@ const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", function(){
     text.textContent = "반가워요!";
-    text.style.color = "blue";
+    const rainbow = ["red", "orange", "yellow", "green", "blue", "navy", "purple", "pink"];
+    const num = Math.floor(Math.random() * rainbow.length);
+    text.style.color= rainbow[num];
+
 });
