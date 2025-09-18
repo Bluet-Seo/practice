@@ -42,6 +42,11 @@ table {
 	border-spacing: 0;
 }
 /*input 모두 클릭할때 테두리같은거 나오지않게 함*/
-input:focus{
+input:focus {
 	outline:none;
+}
+
+a {
+ color:inherit;/*색 no*/
+ text-decoration: none;/*밑줄 No*/
 }
