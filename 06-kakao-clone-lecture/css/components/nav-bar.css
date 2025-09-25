@@ -25,11 +25,6 @@
 }
 
 .nav__point{
-    background-color: tomato;
-    width:6px;
-    height: 6px;
-    border-radius: 50%;
-    display: block;
    position: absolute;
    right:45px;
    top:15px;
